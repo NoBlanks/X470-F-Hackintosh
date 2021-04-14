@@ -1,4 +1,4 @@
-# Personal-Hackintosh
+# Ryzenintosh
 
 - Ryzen 7 2700 (at 4GHz)
 - ASUS ROG STRIX X470-F
