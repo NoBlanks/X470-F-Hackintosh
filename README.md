@@ -20,7 +20,7 @@
 
 # Additional Notes (If anyone ever somehow encounters this on Google)
 - There's an AML that disables the main PCIe slot, the AML is currently disabled but can be enabled in the config.plist
-- The EC-USBX AML was manually compliled but should work normally, if not working, then you should use the prebuilt EC-USBX from Dortania here (https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+- The all AMLs was manually compliled but should work normally, if not working, then you should use the prebuilt AMLs from Dortania
 - Make sure to add the serial number, board number, UUID and the ROM (MAC Address) if anyone is using this (for testing ofc, seriously tho, learn to make your own EFI here: https://dortania.github.io/OpenCore-Install-Guide/) 
 - If you have some SICKKKKK RGB and want to be able to change it in macOS, you can use OpenRGB from here (https://gitlab.com/CalcProgrammer1/OpenRGB)
 - The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better
