@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>Fixing Embedded Controller and having USBX</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,11 +16,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPU-DISABLE.aml</string>
+				<string>Disables PCIe Slot #1 (aka top slot)</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
 				<string>SSDT-GPU-DISABLE.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing SMBus Support</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HPET _CRS (Needs _CRS to XCRS Rename)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -115,6 +131,110 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS Rename</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>KF9DUlM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>KFhDUlM=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>TMR IRQ 0 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgEAeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>RTC0 IRQ 8 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgABeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HPET IRQ 0,8 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgEAIgABhgk=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAIgAAhgk=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -2015,11 +2135,11 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K018303GUK3F7A8</string>
+			<string></string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>DJ2Svnp1</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -2027,9 +2147,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KCNTZ2P7QM</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>ADDB5A03-CAA9-4E81-93D2-9034007568C8</string>
+			<string></string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 		</dict>
