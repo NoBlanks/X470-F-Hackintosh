@@ -1,4 +1,4 @@
-# Ryzentosh
+# Ryzentosh (A new Intel Hackintosh is probably better tho)
 
 - Ryzen 7 2700 (at 4GHz)
 - ASUS ROG STRIX X470-F
@@ -11,14 +11,15 @@
 - Opencore 0.6.8
 - MacOS Big Sur 11.2.3
 
-# What doesn't work
+# What doesn't work (that's confirmed)
 
-- DRM
-- Airdrop
+- DRM in Safari (Imagine watching Netflix and Hulu lol, DRM should work fine in other browsers)
+- Apple TV+ and iTunes Videos 
+- Airdrop (can be fixed with an Apple Airport card or in a later update of AirportItlwm)
 
-# Additional Notes
+# Additional Notes (If anyone ever somehow encounters this on Google)
 - There's an AML that disables the main PCIe slot, the AML is currently disabled but can be enabled in the config.plist
-- The USB-EC AML was manually compliled but should work normally, if not working, then you should use the prebuilt USB-EC from Dortania here (https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
-- If anyone else is using this EFI (and not using Dortania guide) then make sure to change the serial number, board number, UUID and the ROM (MAC Address)
+- The EC-USBX AML was manually compliled but should work normally, if not working, then you should use the prebuilt EC-USBX from Dortania here (https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-EC-USBX-DESKTOP.aml)
+- Make sure to add the serial number, board number, UUID and the ROM (MAC Address) if anyone is using this (for testing ofc, seriously tho, learn to make your own EFI here: https://dortania.github.io/OpenCore-Install-Guide/) 
 - If you have some SICKKKKK RGB and want to be able to change it in macOS, you can use OpenRGB from here (https://gitlab.com/CalcProgrammer1/OpenRGB)
-- The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows and macOS on the same drive
+- The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better
