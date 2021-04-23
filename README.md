@@ -24,7 +24,7 @@
 - All the AMLs were manually compliled but should work normally, if not working, then you should use the prebuilt AMLs from Dortania or make your own (not much of a pain in the ass as I thought)
 - Make sure to add the serial number, board number, UUID and the ROM (MAC Address) if anyone is using this (for testing ofc, seriously tho, learn to make your own EFI here: https://dortania.github.io/OpenCore-Install-Guide/) 
 - If you have some SICKKKKK RGB and want to be able to change it in macOS, you can use OpenRGB from here (https://gitlab.com/CalcProgrammer1/OpenRGB)
-- The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better, remove the Microsoft folder in the EFI if you don't need to dual boot with Windows on the same drive or if you're installing Windows and need to use software such as Fuzedrive or StoreMI
+- The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better, remove the Microsoft folder in the EFI if you don't need to dual boot with Windows on the same drive, if you're installing Windows and need to use software such as Fuzedrive or StoreMI or dual-booting with an operating system that's not Windows 10
 
 # My Socials
 - Discord: NoBlanks#7321
