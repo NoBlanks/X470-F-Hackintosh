@@ -26,6 +26,10 @@
 - If you have some SICKKKKK RGB and want to be able to change it in macOS, you can use OpenRGB from here (https://gitlab.com/CalcProgrammer1/OpenRGB)
 - The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows 10 and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better, remove the Microsoft folder in the EFI if you don't need to dual boot with Windows on the same drive, if you're installing Windows and need to use software such as Fuzedrive or StoreMI or dual-booting with an operating system that's not Windows 10
 
+# Work in Progress
+- Proper USB Mapping (legit a pain in the ass)
+- Might replace Intel Wifi with Apple Airport Card
+
 # Opencore Guide
 https://dortania.github.io/OpenCore-Install-Guide/
 
