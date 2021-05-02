@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>v1.0</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.dortania.USBmap</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>USBMap</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>GP17 - XHC0</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/GP17@7,1/IOPP/XHC0@0,3/XHC0@60000000</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>ports</key>
+				<dict>
+					<key>PRT1</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>AQAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #4, USB 2.0 Personality</string>
+					</dict>
+					<key>PRT2</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>AgAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #5, USB 2.0 Personality</string>
+					</dict>
+					<key>PRT3</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>AwAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #1, USB 2.0 Personality</string>
+					</dict>
+					<key>PRT4</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>BAAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #2, USB 2.0 Personality</string>
+					</dict>
+					<key>PRT5</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>BQAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #4, USB 3.0 Personality</string>
+					</dict>
+					<key>PRT6</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>BgAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #5, USB 3.0 Personality</string>
+					</dict>
+					<key>PRT7</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>BwAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #1, USB 3.0 Personality</string>
+					</dict>
+					<key>PRT8</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>CAAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #2, USB 3.0 Personality</string>
+					</dict>
+				</dict>
+				<key>port-count</key>
+				<data>CAAAAA==</data>
+			</dict>
+			<key>model</key>
+			<string>MacPro7,1</string>
+		</dict>
+		<key>GPP2 - AS42</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/GPP2@1,3/IOPP/PT02@0,2/IOPP/PT24@4/IOPP/AS42@0/AS42@01000000</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>ports</key>
+				<dict>
+					<key>UK01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>AQAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1, USB 3.0 Personality</string>
+					</dict>
+					<key>UK02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>AgAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1, USB 3.0 Personality</string>
+					</dict>
+					<key>UK03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>AwAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1, USB 2.0 Personality</string>
+					</dict>
+					<key>UK04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>BAAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1, USB 2.0 Personality</string>
+					</dict>
+				</dict>
+				<key>port-count</key>
+				<data>BAAAAA==</data>
+			</dict>
+			<key>model</key>
+			<string>MacPro7,1</string>
+		</dict>
+		<key>GPP2 - PTXH</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/GPP2@1,3/IOPP/PTXH@0/PTXH@00000000</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>ports</key>
+				<dict>
+					<key>POT3</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>AwAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.0 Front Panel #1, USB 3.0 Personality</string>
+					</dict>
+					<key>POT4</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>BAAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.0 Front Panel #2, USB 3.0 Personality</string>
+					</dict>
+					<key>PO13</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>DQAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #3, USB 2.0 Personality</string>
+					</dict>
+					<key>POT5</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>BQAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Gen 1 Port #3, USB 3.0 Personality</string>
+					</dict>
+					<key>POT9</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>port</key>
+						<data>CQAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.1 Type-C Front Panel</string>
+					</dict>
+					<key>PO11</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>CwAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.0 Front Panel #1, USB 2.0 Personality</string>
+					</dict>
+					<key>PO12</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>DAAAAA==</data>
+						<key>Comment</key>
+						<string>USB 3.0 Front Panel #2, USB 2.0 Personality</string>
+					</dict>
+					<key>PO15</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>10</integer>
+						<key>port</key>
+						<data>DwAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
+					</dict>
+					<key>PO16</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>10</integer>
+						<key>port</key>
+						<data>EAAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
+					</dict>
+					<key>PO17</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>EQAAAA==</data>
+						<key>Comment</key>
+						<string>Internal RGB</string>
+					</dict>
+					<key>PO19</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>EwAAAA==</data>
+						<key>Comment</key>
+						<string>Intel Bluetooth</string>
+					</dict>
+				</dict>
+				<key>port-count</key>
+				<data>EwAAAA==</data>
+			</dict>
+			<key>model</key>
+			<string>MacPro7,1</string>
+		</dict>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+</dict>
+</plist>
