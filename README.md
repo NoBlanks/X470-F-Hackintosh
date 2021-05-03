@@ -8,7 +8,7 @@
 - WD Blue 500GB SSD (MacOS)
 - MSI GT 710 1GB GDDR3
 - Intel AX200 (Wifi and Bluetooth)
-- Opencore 0.6.8
+- Opencore 0.6.9
 - MacOS Big Sur 11.4 Beta 1
 
 # What doesn't work (properly) (that's confirmed)
