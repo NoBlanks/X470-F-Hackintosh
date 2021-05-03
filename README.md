@@ -27,9 +27,7 @@
 - The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows 10 and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better, remove the Microsoft folder in the EFI if you don't need to dual boot with Windows on the same drive, if you're installing Windows and need to use software such as Fuzedrive or StoreMI or dual-booting with an operating system that's not Windows 10
 
 # Work in Progress
-- Proper USB Mapping (or I might just use the USBMap tool here: https://github.com/corpnewt/USBMap)
 - Might replace Intel Wifi with Apple Airport Card
-- Might disable SMBIOS in injection into Windows to allow for RGB software to work in the near future
 - If stock exists and the drivers are there, might add a RX 6700 XT to replace the GT 710
 
 # Opencore Guide
