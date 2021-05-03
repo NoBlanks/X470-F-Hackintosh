@@ -133,6 +133,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>HPET _CRS to XCRS Rename</string>
 				<key>Count</key>
@@ -159,6 +163,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>TMR IRQ 0 Patch</string>
 				<key>Count</key>
@@ -185,6 +193,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>RTC0 IRQ 8 Patch</string>
 				<key>Count</key>
@@ -211,6 +223,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>HPET IRQ 0,8 Patch</string>
 				<key>Count</key>
@@ -345,10 +361,14 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x1)</key>
+			<key>#PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>shikigva</key>
-				<integer>256</integer>
+				<key>name</key>
+				<data>I2Rpc3BsYXk=</data>
+				<key>IOName</key>
+				<string>#display</string>
+				<key>class-code</key>
+				<data>/////w==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -573,6 +593,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Sample-USB-Map.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -2045,7 +2083,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=3 npci=0x2000 wlan.iorsubscriptions</string>
+				<string>-v keepsyms=1 debug=0x100 alcid=3 npci=0x2000 wlan.iorsubscriptions revcpu=1</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
@@ -2064,6 +2102,8 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<array>
 				<string>rtc-blacklist</string>
+				<string>revcpu</string>
+				<string>revcpuname</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -2111,245 +2151,7 @@
 		<key>Automatic</key>
 		<true/>
 		<key>CustomMemory</key>
-		<true/>
-		<key>Memory</key>
-		<dict>
-			<key>DataWidth</key>
-			<integer>64</integer>
-			<key>ErrorCorrection</key>
-			<integer>3</integer>
-			<key>FormFactor</key>
-			<integer>9</integer>
-			<key>MaxCapacity</key>
-			<integer>68719476736</integer>
-			<key>TotalWidth</key>
-			<integer>64</integer>
-			<key>Type</key>
-			<integer>26</integer>
-			<key>TypeDetail</key>
-			<integer>21</integer>
-			<key>Devices</key>
-			<array>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 0</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_A1</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 0</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_A2</string>
-					<key>Manufacturer</key>
-					<string>Team Group Inc.
-</string>
-					<key>PartNumber</key>
-					<string>TEAMGROUP-UD4-3600
-</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>16384</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 0</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_B1</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 0</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_B2</string>
-					<key>Manufacturer</key>
-					<string>Team Group Inc.</string>
-					<key>PartNumber</key>
-					<string>TEAMGROUP-UD4-3600</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>16384</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 1</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_C1</string>
-					<key>Manufacturer</key>
-					<string>Acidanthera</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 1</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_C2</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 1</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_D1</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 1</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_D2</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 2</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_C1</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 2</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_C2</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 2</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_D1</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-				<dict>
-					<key>AssetTag</key>
-					<string></string>
-					<key>BankLocator</key>
-					<string>BANK 2</string>
-					<key>DeviceLocator</key>
-					<string>DIMM_D2</string>
-					<key>Manufacturer</key>
-					<string>Empty</string>
-					<key>PartNumber</key>
-					<string>Empty</string>
-					<key>SerialNumber</key>
-					<string>Empty</string>
-					<key>Size</key>
-					<integer>1</integer>
-					<key>Speed</key>
-					<integer>3400</integer>
-				</dict>
-			</array>
-		</dict>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
@@ -2406,7 +2208,7 @@
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
-			<string>Auto</string>
+			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
@@ -2421,7 +2223,7 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x1)</string>
+			<string>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
@@ -2438,7 +2240,7 @@
 			<integer>0</integer>
 		</dict>
 		<key>ConnectDrivers</key>
-		<false/>
+		<true/>
 		<key>Drivers</key>
 		<array>
 			<string>AudioDxe.efi</string>
@@ -2552,6 +2354,12 @@
 			<key>DisableSecurityPolicy</key>
 			<false/>
 			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
+			<key>ForgeUefiSupport</key>
+			<false/>
+			<key>ReloadOptionRoms</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
