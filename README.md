@@ -9,7 +9,7 @@
 - MSI GT 710 1GB GDDR3
 - Intel AX200 (Wifi and Bluetooth)
 - Opencore 0.6.9
-- MacOS Big Sur 11.4 Beta 1
+- MacOS Big Sur 11.4 Beta 3
 
 # What doesn't work (properly) (that's confirmed)
 
