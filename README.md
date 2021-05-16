@@ -13,7 +13,7 @@
 
 # What doesn't work (properly) (that's confirmed)
 
-- DRM in Safari, Apple TV+ and iTunes Videos
+- DRM in Safari, Apple TV+ and iTunes Videos (Can be fixed by installing Catalina and doing DRM fixes)
 - Airdrop (can be fixed with an Apple Airport card or in a later update of AirportItlwm)
 - Discord crashing every time you join a voice call (can be fixed and happens on every AMD hackintosh, search it up on Google or smth)
 
