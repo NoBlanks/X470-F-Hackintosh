@@ -283,7 +283,7 @@
 						<key>port</key>
 						<data>EwAAAA==</data>
 						<key>Comment</key>
-						<string>Intel Bluetooth</string>
+						<string>Internal Bluetooth</string>
 					</dict>
 				</dict>
 				<key>port-count</key>
