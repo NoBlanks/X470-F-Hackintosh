@@ -21,7 +21,7 @@
 - The SMBIOS is the MacPro7,1 (Mac Pro 2019)
 - OpenCore logging is disabled as I weanted it to be disabled, you can reenable it in the config.plist by changing the target to 67 in the Misc section
 - There's an AML that disables the main PCIe slot, the AML is currently disabled but can be enabled in the config.plist
-- The Windows 10 EFI folder is contained in this EFI folder so you might be able to dual boot Windows 10 and macOS on the same drive but having them on separative drives is SOOOOOOOOOOOO much better, remove the Microsoft folder in the EFI if you don't need to dual boot with Windows on the same drive, if you're installing Windows and need to use software such as Fuzedrive or StoreMI or dual-booting in any way with an operating system that's not Windows 10
+- The Windows 10 EFI folder is contained in this EFI folder, remove the Microsoft folder if you're installing Windows on a separate drive or booting anything else that's not Windows 10
 
 # Work in Progress
 - USB Map the second internal USB 2.0 header
