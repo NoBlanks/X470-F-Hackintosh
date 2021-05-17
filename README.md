@@ -22,6 +22,7 @@
 - OpenCore logging is disabled as I weanted it to be disabled, you can reenable it in the config.plist by changing the target to 67 in the Misc section
 - There's an AML that disables the main PCIe slot, the AML is currently disabled but can be enabled in the config.plist
 - The Windows 10 EFI folder is contained in this EFI folder, remove the Microsoft folder if you're installing Windows on a separate drive or booting anything else that's not Windows 10
+- ALL AMLs are manually compiled 
 
 # Work in Progress
 - USB Map the second internal USB 2.0 header
