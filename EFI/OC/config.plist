@@ -568,24 +568,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Map</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>Sample-USB-Map.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Mac Pro 2019 RAM and PCIe menu disable</string>
 				<key>MaxKernel</key>
 				<string></string>
@@ -601,6 +583,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>RestrictEvents.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>X470-F-USB-Map.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>

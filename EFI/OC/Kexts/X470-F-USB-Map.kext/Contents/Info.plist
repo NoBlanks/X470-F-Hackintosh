@@ -136,7 +136,7 @@
 						<key>port</key>
 						<data>AQAAAA==</data>
 						<key>Comment</key>
-						<string>Rear USB 3.1, USB 3.0 Personality</string>
+						<string>Rear USB 3.1 Gen 2 Port #1, USB 3.0 Personality</string>
 					</dict>
 					<key>UK02</key>
 					<dict>
@@ -145,7 +145,7 @@
 						<key>port</key>
 						<data>AgAAAA==</data>
 						<key>Comment</key>
-						<string>Rear USB 3.1, USB 3.0 Personality</string>
+						<string>Rear USB 3.1 Gen 2 Port #2, USB 3.0 Personality</string>
 					</dict>
 					<key>UK03</key>
 					<dict>
@@ -154,7 +154,7 @@
 						<key>port</key>
 						<data>AwAAAA==</data>
 						<key>Comment</key>
-						<string>Rear USB 3.1, USB 2.0 Personality</string>
+						<string>Rear USB 3.1 Gen 2 Port #1, USB 2.0 Personality</string>
 					</dict>
 					<key>UK04</key>
 					<dict>
@@ -163,7 +163,7 @@
 						<key>port</key>
 						<data>BAAAAA==</data>
 						<key>Comment</key>
-						<string>Rear USB 3.1, USB 2.0 Personality</string>
+						<string>Rear USB 3.1 Gen 2 Port #2, USB 2.0 Personality</string>
 					</dict>
 				</dict>
 				<key>port-count</key>
@@ -258,15 +258,6 @@
 						<key>Comment</key>
 						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
 					</dict>
-					<key>PO16</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>10</integer>
-						<key>port</key>
-						<data>EAAAAA==</data>
-						<key>Comment</key>
-						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
-					</dict>
 					<key>PO17</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -276,6 +267,15 @@
 						<key>Comment</key>
 						<string>Internal RGB</string>
 					</dict>
+					<key>PO16</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>10</integer>
+						<key>port</key>
+						<data>EAAAAA==</data>
+						<key>Comment</key>
+						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
+					</dict>
 					<key>PO19</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -283,11 +283,20 @@
 						<key>port</key>
 						<data>EwAAAA==</data>
 						<key>Comment</key>
-						<string>Internal Bluetooth</string>
+						<string>Internal USB 2.0 Header #2</string>
+					</dict>
+					<key>PO21</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>FQAAAA==</data>
+						<key>Comment</key>
+						<string>Internal USB 2.0 Header #1</string>
 					</dict>
 				</dict>
 				<key>port-count</key>
-				<data>EwAAAA==</data>
+				<data>FQAAAA==</data>
 			</dict>
 			<key>model</key>
 			<string>MacPro7,1</string>
