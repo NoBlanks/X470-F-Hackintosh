@@ -8,14 +8,15 @@
 - WD Blue 500GB SSD (MacOS)
 - MSI GT 710 1GB GDDR3
 - Intel AX200 (Wifi and Bluetooth)
-- Opencore 0.6.9
-- MacOS Big Sur 11.5 Beta 1
+- Opencore 0.7.0
+- MacOS Big Sur 11.5 Beta 2
 
 # What doesn't work (properly) (that's confirmed)
 
 - DRM in Safari, Apple TV+ and iTunes Videos (Can be fixed by installing Catalina and doing DRM fixes)
 - Airdrop (can be fixed with an Apple Airport card or in a later update of AirportItlwm)
 - Discord crashing every time you join a voice call (can be fixed and happens on every AMD hackintosh, search it up on Google or smth)
+- Due to the GT 710, it's not compatible with macOS 12 Monterey (can be fixed by getting a support AMD GPU, rip Nvidia)
 
 # Additional Notes
 - The SMBIOS is the MacPro7,1 (Mac Pro 2019)
