@@ -258,15 +258,6 @@
 						<key>Comment</key>
 						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
 					</dict>
-					<key>PO17</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>port</key>
-						<data>EQAAAA==</data>
-						<key>Comment</key>
-						<string>Internal RGB</string>
-					</dict>
 					<key>PO16</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -275,6 +266,15 @@
 						<data>EAAAAA==</data>
 						<key>Comment</key>
 						<string>Rear USB 3.1 Gen 1 Type-C Port Flip</string>
+					</dict>
+					<key>PO17</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>EQAAAA==</data>
+						<key>Comment</key>
+						<string>Internal RGB</string>
 					</dict>
 					<key>PO19</key>
 					<dict>
