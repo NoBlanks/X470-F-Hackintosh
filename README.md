@@ -16,7 +16,7 @@
 - DRM in Safari, Apple TV+ and iTunes Videos (Can be fixed by installing Catalina and doing DRM fixes)
 - Airdrop (can be fixed with an Apple Airport card or in a later update of AirportItlwm)
 - Discord crashing every time you join a voice call (can be fixed and happens on every AMD hackintosh, search it up on Google or smth)
-- Due to the GT 710, it's POSSIBLY not compatible with macOS 12 Monterey (can be fixed by getting a supported AMD GPU, rip Nvidia)
+- macOS 12 Monterey doesn't work due to the AMD patches, until then, wait for new AMD patches and stay on Big Sur
 
 # Additional Notes
 - The SMBIOS is the MacPro7,1 (Mac Pro 2019)
@@ -26,7 +26,7 @@
 - ALL AMLs are manually compiled 
 
 # Work in Progress
-- USB Map the second internal USB 2.0 header
+
 
 # Opencore Guide
 https://dortania.github.io/OpenCore-Install-Guide/
