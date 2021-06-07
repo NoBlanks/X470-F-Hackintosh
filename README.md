@@ -2,7 +2,7 @@
 
 - Ryzen 7 2700 (at 4GHz)
 - ASUS ROG STRIX X470-F
-- Team T-Force Valcan TUF Alliance 32GB (2x16gb) 3600 CL19 (running at 3400MHz CL16-18-18-35-45)
+- Team T-Force Valcan TUF Alliance 32GB (2x16gb) 3600 CL19 (running at 3466MHz CL16-18-19-35-40)
 - XPG GAMMIX S11 Pro 1TB M.2 NVME SSD (Windows)
 - Some Toshiba 2TB Hard Drive (Windows)
 - WD Blue 500GB SSD (MacOS)
