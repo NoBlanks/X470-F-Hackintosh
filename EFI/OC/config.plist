@@ -265,6 +265,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -464,29 +466,11 @@
 				<key>BundlePath</key>
 				<string>AirportItlwm.kext</string>
 				<key>Comment</key>
-				<string>Intel WIFI Fix for Big Sur</string>
+				<string>Intel WIFI Fix for Monterey</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
-				<key>MaxKernel</key>
-				<string>20.99.99</string>
-				<key>MinKernel</key>
-				<string>20.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>IntelBluetoothInjector.kext</string>
-				<key>Comment</key>
-				<string>Intel Bluetooth On/Off Switch Enable</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelBluetoothInjector</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -601,6 +585,42 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>X470-F-USB-Map.kext</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>DebugEnhancer.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/DebugEnhancer</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -747,6 +767,8 @@
 			<string>x86_64</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
+			<key>CustomKernel</key>
+			<false/>
 		</dict>
 		<key>Patch</key>
 		<array>
@@ -756,7 +778,7 @@
 				<key>Base</key>
 				<string>_i386_switch_lbrs</string>
 				<key>Comment</key>
-				<string>algrey - Disable _i386_switch_lbrs</string>
+				<string>algrey - Disable _i386_switch_lbrs - 11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -770,7 +792,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>20.1.0</string>
 				<key>Replace</key>
@@ -786,7 +808,7 @@
 				<key>Base</key>
 				<string>_i386_lbr_init</string>
 				<key>Comment</key>
-				<string>algrey - Disable _i386_lbr_init</string>
+				<string>algrey - Disable _i386_lbr_init - 11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -800,7 +822,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>20.1.0</string>
 				<key>Replace</key>
@@ -816,7 +838,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - _i386_init_slave - Remove wrmsr 0x1c8</string>
+				<string>algrey - _i386_init_slave - Remove wrmsr 0x1c8 - 11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -830,7 +852,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>20.1.0</string>
 				<key>Replace</key>
@@ -846,7 +868,7 @@
 				<key>Base</key>
 				<string>_i386_lbr_native_state_to_mach_thread_state</string>
 				<key>Comment</key>
-				<string>algrey - Disable _i386_lbr_native_state_to_mach_thread_state</string>
+				<string>algrey - Disable _i386_lbr_native_state_to_mach_thread_state  - 11.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -874,9 +896,39 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
+				<string>_i386_filtered_lbr_state_to_mach_thread_state</string>
+				<key>Comment</key>
+				<string>Goldfish64 - Disable _i386_filtered_lbr_state_to_mach_thread_state - 12.0</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>ww==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - commpage_populate -remove rdmsr</string>
+				<string>algrey - _commpage_populate - Remove rdmsr - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -890,7 +942,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -904,27 +956,27 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string>_cpu_topology_sort</string>
+				<string>_x86_validate_topology</string>
 				<key>Comment</key>
-				<string>algrey - cpu_topology_sort -disable _x86_validate_topology</string>
+				<string>XLNC - Disable _x86_validate_topology - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>6AAA//8=</data>
+				<data></data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>/wAA//8=</data>
+				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
-				<data>Dx9EAAA=</data>
+				<data>ww==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -936,7 +988,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0 - 10.15/10.16</string>
+				<string>algrey - _cpuid_set_cache_info - Set cpuid to 0x8000001D instead 0 - 10.15/10.16/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -950,7 +1002,7 @@
 				<key>Mask</key>
 				<data>/////////////////wAAAAAA////</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
@@ -966,7 +1018,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0 - 10.13/10.14</string>
+				<string>algrey - _cpuid_set_cache_info - Set cpuid to 0x8000001D instead 0 - 10.13/10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -996,7 +1048,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
+				<string>algrey - _cpuid_set_cache_info - Set cpuid to 0x8000001D instead 4 - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1010,7 +1062,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1026,7 +1078,37 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
+				<string>algrey - _cpuid_set_cache_info - Don&apos;t set cpuid_cores_per_package - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>weAag8AB</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>//D///D/</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>Dx8A6weQ</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>algrey - _cpuid_set_cache_info - Don&apos;t set cpuid_cores_per_package - 10.13/10.14/10.15/11.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1056,7 +1138,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>NoOne - skip cpuid_cores_per_package test - 10.15/10.16</string>
+				<string>NoOne - Skip _cpuid_cores_per_package test - 10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1070,7 +1152,7 @@
 				<key>Mask</key>
 				<data>//8AAAD///8AAAAA//8A/w==</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
@@ -1086,7 +1168,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - skip cpuid_cores_per_package test - 10.13/10.14</string>
+				<string>algrey - Skip _cpuid_cores_per_package test - 10.13/10.14</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1116,7 +1198,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_generic_info - remove wrmsr</string>
+				<string>algrey - _cpuid_set_generic_info - Remove wrmsr - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1130,7 +1212,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1146,7 +1228,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_generic_info - set microcode=186</string>
+				<string>algrey - _cpuid_set_generic_info - Set microcode=186 - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1160,7 +1242,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1176,7 +1258,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_generic_info - set flag=1</string>
+				<string>algrey - _cpuid_set_generic_info - Set flag=1 - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1190,7 +1272,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1206,7 +1288,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_generic_info - disable check to allow leaf7</string>
+				<string>algrey - _cpuid_set_generic_info - Disable check to allow leaf7 - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1220,7 +1302,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1236,7 +1318,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - GenuineIntel to AuthenticAMD</string>
+				<string>algrey - _cpuid_set_info - GenuineIntel to AuthenticAMD - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1250,7 +1332,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1266,7 +1348,37 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<string>Goldfish64 - Bypass GenuineIntel check panic - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>uW4AAAAPvsA5wQAAAAAAAA==</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>/////////////wAAAAAAAA==</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>uW4AAAAPvsA5wZCQkJCQkA==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 10.13/10.14/10.15/11.3</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1294,9 +1406,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>DhinakG - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN - 11.3b1</string>
+				<string>DhinakG - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 11.3b1</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1324,9 +1436,39 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>MdIAAIA9AAAAAAZ1AA==</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>//8AAP//AAAA////AA==</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>swG6vE/qeOlyAAAAkA==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - jmp to calculations and set cpuid_cores_per_package - 10.15/10.16</string>
+				<string>algrey - jmp to calculations and set cpuid_cores_per_package - 10.15/11.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1356,7 +1498,37 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and threads calculations - 10.15/10.16</string>
+				<string>XLNC - jmp to calculations and set cpuid_cores_per_package - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>dQDoAAAAAEiLBQAAAABIiQUAAAAA</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>/wD/AAAAAP///wAAAAD///8AAAAA</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>dEoAAAAAAJCJDQAAAADpbAAAAJCQ</data>
+				<key>ReplaceMask</key>
+				<data>//8AAAAAAP///wAAAAD/////////</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_cpuid_set_info</string>
+				<key>Comment</key>
+				<string>algrey - cores and threads calculations - 10.15/10.16</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1384,9 +1556,69 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 1 - 10.13</string>
+				<string>XLNC - cores and threads calculations #1 - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>uTUAAAAPMgnCuQEAAQAPRcgPt8HB6RCD4Q/rF7k1AAAADzIJwrkBAAEAD0XID7fBwekQ</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>uAgAAIAx2zHJMdIPokGJzkUPtvZB/8a4HgAAgDHbMckx0g+iD7b3/8ZEifEx0umW////</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_cpuid_set_info</string>
+				<key>Comment</key>
+				<string>XLNC - cores and threads calculations #2 - 12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>gz24AAAAAHV/6fwAAAA=</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>////AAD///////////8=</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>Replace</key>
+				<data>icj39onBRInw6+iQkJA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_cpuid_set_info</string>
+				<key>Comment</key>
+				<string>algrey - cores and logicals count #1 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1414,9 +1646,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 1 - 10.14</string>
+				<string>algrey - cores and logicals count #1 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1446,7 +1678,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 2 - 10.13/10.14</string>
+				<string>algrey - cores and logicals count #2 - 10.13/10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1476,7 +1708,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 3 - 10.13</string>
+				<string>algrey - cores and logicals count #3 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1506,7 +1738,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 3 - 10.14</string>
+				<string>algrey - cores and logicals count #3 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1536,7 +1768,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 4 - 10.13</string>
+				<string>algrey - cores and logicals count #4 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1566,7 +1798,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 4 - 10.14</string>
+				<string>algrey - cores and logicals count #4 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1596,7 +1828,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - i386_init - remove rdmsr (x3)</string>
+				<string>algrey - _i386_init - Remove rdmsr (x3) - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1610,7 +1842,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1624,9 +1856,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_tsc_init</string>
 				<key>Comment</key>
-				<string>algrey - tsc_init - remove Penryn check to execute default case 10.14</string>
+				<string>algrey - Remove Penryn check to execute default case - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1654,9 +1886,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_tsc_init</string>
 				<key>Comment</key>
-				<string>algrey - tsc_init - remove Penryn check to execute default case</string>
+				<string>algrey - Remove Penryn check to execute default case - 10.13/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1670,7 +1902,7 @@
 				<key>Mask</key>
 				<data>/////////wD///8=</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1684,9 +1916,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_tsc_init</string>
 				<key>Comment</key>
-				<string>algrey - tsc_init - grab DID and VID from MSR</string>
+				<string>algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1700,7 +1932,7 @@
 				<key>Mask</key>
 				<data>////////////////////////////AAAA////////AAAA/w==</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1716,7 +1948,7 @@
 				<key>Base</key>
 				<string>_tsc_init</string>
 				<key>Comment</key>
-				<string>algrey - tsc_init - skip msr_flex_ratio test and go grab FSBFrequency from EFI</string>
+				<string>algrey - Skip msr_flex_ratio test and get FSBFrequency from EFI - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1730,7 +1962,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1744,69 +1976,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_lapic_init </string>
 				<key>Comment</key>
-				<string>algrey - lapic_init - remove version check and panic - 10.15</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/gTdl4=</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string>19.99.99</string>
-				<key>MinKernel</key>
-				<string>19.0.0</string>
-				<key>Replace</key>
-				<data>Dx9EAAA=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NoOne - lapic_init - remove version check and panic - 10.16</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/gTD4aBAAAA</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string>20.99.99</string>
-				<key>MinKernel</key>
-				<string>20.0.0</string>
-				<key>Replace</key>
-				<data>kJCQkJCQkJCQ</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>algrey - lapic_init - remove version check and panic - 10.13/10.14</string>
+				<string>algrey - Remove version check and panic - 10.13/10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1834,27 +2006,27 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>_lapic_init </string>
 				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic - 10.15/10.16</string>
+				<string>XLNC - Remove version check and panic - 10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>gz0AAAAAAHQO</data>
+				<data>JfwAAACD+BM=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>//8AAAD/////</data>
+				<data></data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
-				<data>6zkPH4AAAAAA</data>
+				<data>JfwAAAAPHwA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -1866,7 +2038,37 @@
 				<key>Base</key>
 				<string>_lapic_interrupt</string>
 				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic - 10.13/10.14</string>
+				<string>algrey - Skip checks and prevent panic - 10.15/11.0/12.0</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>gz0AAAAAAHQN</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>//8AAAD/////</data>
+				<key>MaxKernel</key>
+				<string>21.99.99</string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>Replace</key>
+				<data>6ygPH4AAAAAA</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_lapic_interrupt</string>
+				<key>Comment</key>
+				<string>algrey - Skip checks and prevent panic - 10.13/10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1896,7 +2098,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - mtrr_update_action - fix PAT</string>
+				<string>algrey - _mtrr_update_action fix PAT - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1910,7 +2112,7 @@
 				<key>Mask</key>
 				<data>////////D////////////////w==</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -1926,7 +2128,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>Shaneee - mtrr_update_action - fix PAT</string>
+				<string>Shaneee - _mtrr_update_action fix PAT - 10.13/10.14/10.15/11.0/12.0</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1940,7 +2142,7 @@
 				<key>Mask</key>
 				<data>////////D////////////////w==</data>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string>21.99.99</string>
 				<key>MinKernel</key>
 				<string>17.0.0</string>
 				<key>Replace</key>
@@ -2081,24 +2283,22 @@
 				<string>Auto</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>CleanNvram.efi</string>
-				<key>RealPath</key>
-				<false/>
 				<key>Name</key>
-				<string>CleanNvram.efi</string>
-				<key>TextMode</key>
-				<false/>
+				<string>CsrUtil.efi</string>
+				<key>Comment</key>
+				<string>CsrUtil.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>CsrUtil.efi</string>
 				<key>Arguments</key>
 				<string></string>
-				<key>Path</key>
-				<string>CleanNvram.efi</string>
 				<key>Auxiliary</key>
 				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -2206,7 +2406,7 @@
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>EjRWeJAS</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -2296,7 +2496,6 @@
 			<string>ExFatDxe.efi</string>
 			<string>NTFS.efi</string>
 			<string>CrScreenshotDxe.efi</string>
-			<string>NvmExpressDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
