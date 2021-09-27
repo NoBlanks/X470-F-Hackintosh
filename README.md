@@ -1,6 +1,6 @@
 # Ryzentosh (A new Intel Hackintosh is probably better tho)
 
-- Ryzen 7 2700 (at 4GHz)
+- Ryzen 5 5600X
 - ASUS ROG STRIX X470-F
 - Team T-Force Valcan TUF Alliance 32GB (2x16gb) 3600 CL19 (running at 3466MHz CL16-18-19-35-40)
 - XPG GAMMIX S11 Pro 1TB M.2 NVME SSD (Windows)
@@ -8,14 +8,13 @@
 - WD Blue 500GB SSD (MacOS)
 - MSI GT 710 1GB GDDR3
 - Intel AX200 (Wifi and Bluetooth)
-- Opencore 0.7.1
-- MacOS Monterey Dev Beta 1
+- Opencore 0.7.3
+- MacOS Monterey Dev Beta 6
 
 # What doesn't work (excluding most of the issues that only happen on AMD Hackintoshes)
 
 - DRM in Safari, Apple TV+ and iTunes Videos (Can be fixed by installing Catalina and doing DRM fixes)
 - Airdrop (can be fixed with an Apple Airport card or in a later update of AirportItlwm)
-- macOS 12 Monterey Dev Beta 2 and Public Beta 1 doesn't work due to the AMD patches, until then, wait for new AMD patches
 
 # Additional Notes
 - The SMBIOS is the MacPro7,1 (Mac Pro 2019)
