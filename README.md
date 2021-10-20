@@ -21,6 +21,7 @@
 - OpenCore logging is disabled as I weanted it to be disabled, you can reenable it in the config.plist by changing the target to 67 in the Misc section
 - There's an AML that disables the main PCIe slot, the AML is currently disabled but can be enabled in the config.plist
 - ALL AMLs are manually compiled 
+- AMD Patches are set to 6-Cores, change it if your CPU has more cores
 
 # Work in Progress
 
