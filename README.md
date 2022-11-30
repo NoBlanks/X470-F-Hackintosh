@@ -4,7 +4,8 @@ OUTDATED EFI, WILL NOT BE UPDATING THIS
 
 - Ryzen 5 5600X
 - ASUS ROG STRIX X470-F
-- Team T-Force Valcan TUF Alliance 32GB (2x16gb) 3600 CL19 (running at 3466MHz CL16-18-19-35-40)
+- Corsair Vengence LPX DDR4-4000 CL16 16GB
+- Patriot Viper Steel DDR4-4000 CL16 16GB
 - XPG GAMMIX S11 Pro 1TB M.2 NVME SSD (Windows)
 - Some Toshiba 2TB Hard Drive (Windows)
 - WD Blue 500GB SSD (MacOS)
