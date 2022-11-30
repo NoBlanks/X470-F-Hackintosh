@@ -1,5 +1,7 @@
 # Ryzentosh (A new Intel Hackintosh is probably better tho)
 
+OUTDATED EFI, WILL NOT BE UPDATING THIS
+
 - Ryzen 5 5600X
 - ASUS ROG STRIX X470-F
 - Team T-Force Valcan TUF Alliance 32GB (2x16gb) 3600 CL19 (running at 3466MHz CL16-18-19-35-40)
@@ -8,8 +10,8 @@
 - WD Blue 500GB SSD (MacOS)
 - MSI GT 710 1GB GDDR3
 - Intel AX200 (Wifi and Bluetooth)
-- Opencore 0.7.3
-- MacOS Monterey Dev Beta 6
+- Opencore 0.8.5
+- MacOS Monterey 12.6.1
 
 # What doesn't work (excluding most of the issues that only happen on AMD Hackintoshes)
 
