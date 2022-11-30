@@ -9,7 +9,7 @@ OUTDATED EFI, WILL NOT BE UPDATING THIS
 - XPG GAMMIX S11 Pro 1TB M.2 NVME SSD (Windows)
 - Some Toshiba 2TB Hard Drive (Windows)
 - WD Blue 500GB SSD (MacOS)
-- MSI GT 710 1GB GDDR3
+- Gigabyte Gaming OC RX 6800
 - Intel AX200 (Wifi and Bluetooth)
 - Opencore 0.8.5
 - MacOS Monterey 12.6.1
