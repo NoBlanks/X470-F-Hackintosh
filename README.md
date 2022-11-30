@@ -32,9 +32,5 @@ OUTDATED EFI, WILL NOT BE UPDATING THIS
 # Opencore Guide
 https://dortania.github.io/OpenCore-Install-Guide/
 
-# My Socials
-- Discord: NoBlanks#7114
-- Twitter and Instagram: @noblanks_
-
 # My PayPal because why not
 - https://paypal.me/Blubot?locale.x=en_US
