@@ -1,4 +1,4 @@
-# Ryzentosh (A new Intel Hackintosh is probably better tho)
+# ASUS ROG STRIX X470-F Gaming Hackintosh
 
 OUTDATED EFI, WILL NOT BE UPDATING THIS
 
